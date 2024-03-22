@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top-container{
+    background-image: url(./assets/bg1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+}
+.title-text{
+    color: red;
+}
+.fullstack{
+    text-decoration: underline;
+}
