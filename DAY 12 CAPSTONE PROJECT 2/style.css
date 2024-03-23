@@ -63,7 +63,7 @@ h3 {
     color: #11999e;
     font-family: "Montserrat", sans-serif;
 }
-.btn{
+.btn {
     background: #11cdd4;
     border-radius: 8px;
     font-family: "Montserrat", sans-serif;
@@ -71,14 +71,32 @@ h3 {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease; 
 }
+
+.btn:hover {
+    background: #0ea4aa; 
+}
+
 .bottom-container {
     background-color: #66bfbf;
     padding: 50px 0 20px;
+}
+
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+a:hover{
+    background-color:#ffffff
 }
 .copyright {
     color: #eaf6f6;
     font-size: 0.75rem;
     padding: 20px 0;
 }
+
 
