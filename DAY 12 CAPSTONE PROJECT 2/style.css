@@ -1,4 +1,3 @@
-
 body {
     color: #40514e;
     margin: 0;
@@ -78,6 +77,8 @@ h3 {
     background: #0ea4aa; 
 }
 
+
+
 .bottom-container {
     background-color: #66bfbf;
     padding: 50px 0 20px;
@@ -98,5 +99,3 @@ a:hover{
     font-size: 0.75rem;
     padding: 20px 0;
 }
-
-
