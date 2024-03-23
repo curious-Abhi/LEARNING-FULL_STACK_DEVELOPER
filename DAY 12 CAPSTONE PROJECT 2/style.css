@@ -23,9 +23,25 @@ font-size: 2.5rem;
 font-weight: normal;
 padding-bottom: 10px;
 }
-.title-text{
-    
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+.bottom-cloud{
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
 }
 .fullstack{
     text-decoration: underline;
+}
+
+.profile img{
+    height:150px;
+}
+
+.middle-container{
+    
 }
