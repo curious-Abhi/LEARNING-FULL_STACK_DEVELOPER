@@ -53,5 +53,41 @@ li a:hover{
 
 .header{
     background: url(./images/bg1\ cup.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    /*FLEX BOX*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffff;
+    text-align: center;
+    position: relative;
+} 
+
+.main-heading{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
     
+.primary-heading{
+    position: absolute;
+    bottom: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+.main-button{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background:transparent;
+    background-color: var(--main-color);
+    transform: translateY(60px);
 }
