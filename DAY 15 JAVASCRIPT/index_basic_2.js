@@ -14,3 +14,9 @@ console.log(username); */
 
     document.getElementById("myh1").textContent=`Hello ${username}`
 } */
+
+
+
+
+// ***************************FUNCTION************************************
+

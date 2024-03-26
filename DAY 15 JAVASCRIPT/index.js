@@ -176,7 +176,105 @@ alert("your dog's age is "+ humanAge +" yrs old in human age")*/
 
 
 
-//TYPE CONVERSION
+//TYPE CONVERSION=change the datatype of a value to another 
+//                             (string , numbers , booleans)
+
+//let age=prompt("How old are you?");
+//age+=1;
+//console.log(age); 
+
+/*let age=prompt("How old are you?");
+age=Number(age);
+age+=1;
+console.log(age , typeof age); */
+
+/*let x="pizza";
+let y="pizza";
+let z="pizza";
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);  */
+
+/* let x="0";
+let y="0";
+let z="0";
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+*/
+
+/* let x = "";
+let y = "";
+let z = "";
+
+x = Number(x); // Output: 0 number
+y = String(y); // Output: "" string
+z = Boolean(z); // Output: false boolean
+
+console.log(x, typeof x); // Output: 0 number
+console.log(y, typeof y); // Output:  string
+console.log(z, typeof z); // Output: false boolean */
+
+
+
+// const = a variable that can't be changed
+
+//program to calculate circumference of circle
+
+//let pi=3.14159;
+
+//pi=34;
+/*const PI=3.14159;
+PI=345;
+
+let radius;
+let circumference;
+
+radius=prompt("enter the radius of circle");
+radius=Number(radius);
+
+circumference=2*pi*radius;
+console.log(circumference);
+
+
+
+// Program to calculate circumference of a circle
+
+// Define a constant for pi
+const PI = 3.14159; // Assigning value 3.14159 to constant PI
+
+// Attempting to reassign value to constant PI (will throw an error)
+// pi = 34; // This line will throw an error because constants cannot be reassigned
+
+// Declare variables to store radius and circumference
+let radius;
+let circumference;
+
+// Prompt the user to enter the radius of the circle and convert it to a number
+radius = prompt("Enter the radius of the circle"); // Asking user for input
+radius = Number(radius); // Converting user input (which is a string) to a number
+
+// Calculate the circumference of the circle using the formula: circumference = 2 * PI * radius
+// The value of PI is obtained from the constant defined earlier
+circumference = 2 * PI * radius; // Calculating circumference using formula
+
+// Output the calculated circumference to the console
+console.log(circumference); // Displaying the circumference of the circle to the console
+
+
+*/
+
+
 
 
 
