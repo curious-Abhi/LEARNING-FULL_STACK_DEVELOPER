@@ -98,10 +98,92 @@ document.getElementById("p3").textContent=`enrolled :${isStudent}`*/
 //twitter challenge
 // PROMPT task: you have written 182 characters , you have -42 characters left
 
-var tweet=prompt("write any tweet");
+/*var tweet=prompt("write any tweet");
 var tweetcount=tweet.length;
 
-alert("you have written "+tweetcount +"characters , you have"+(140-tweetcount) +"characters left");
+alert("you have written "+tweetcount +"characters , you have"+(140-tweetcount) +"characters left");*/
+
+// 3.string SLICING
+
+//var name = "Abhishek";
+//name.slice(0, 3);
+
+//#challenge
+
+/*var tweet=prompt("write any tweet");
+var tweetunder140=tweet.slice(0,140);
+alert(tweetunder140);*/
+
+
+// 4.toUpperCase
+
+/*var namef="abhishek";
+console.log(namef.toUpperCase());
+
+var lname="KUMAR";
+console.log(lname.toLowerCase()); */
+
+//CHALLENGE
+
+// PROMPT : Hello Abhishek
+
+//OPERATOR
+
+//ARITHMETIC OPERATOR  = operands(values, variables etc.)
+//                      operators(+,-,*,/)
+
+//let  student=30;
+
+//student+=1;
+//student-=1;
+//student*=4;
+//student/=2;
+
+//student=student**2;
+
+//student=student%4
+
+//student++;
+//student--;
+
+//console.log(student)
+
+
+//OPERATOR PRECEDENCE
+
+
+// OPERATOR PRECEDENCE RULES:
+// 1. Parentheses: Operations within parentheses are evaluated first.
+// 2. Increment and Decrement Operators: ++ and -- have higher precedence than most other operators.
+// 3. Multiplication and Division: *, /, and % have higher precedence than addition and subtraction.
+// 4. Addition and Subtraction: + and - have lower precedence than multiplication, division, and modulo.
+// 5. Assignment Operators: Assignment operators (=, +=, -=, etc.) have lower precedence than most other operators.
+
+
+//let result=1+2*3+4**2
+//console.log(result)
+
+//CHALLENGE
+
+//DOG AGE TO HUMAN AGE FORMULA
+
+//humanAge=(dogAge-2)*4+21
+
+/*var dogAge=prompt("enter the age of your dog");
+var humanAge=((dogAge-2)*4)+21;
+
+alert("your dog's age is "+ humanAge +" yrs old in human age")*/
+
+
+
+//TYPE CONVERSION
+
+
+
+
+
+
+
 
 
 
