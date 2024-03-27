@@ -284,3 +284,123 @@ let isLessOrEqual = (5 <= 10);      // Less than or equal to
 
 
 */
+
+
+/*
+//LOOP
+
+
+// for Loop: Executes a block of code a specified number of times.
+for (let i = 0; i < 5; i++) {
+  console.log(i); // Outputs 0, 1, 2, 3, 4
+}
+
+// while Loop: Executes a block of code while a specified condition is true.
+let i = 0;
+while (i < 5) {
+  console.log(i); // Outputs 0, 1, 2, 3, 4
+  i++;
+}
+
+// do...while Loop: Similar to a while loop, but the code block is executed once before checking the condition.
+let j = 0;
+do {
+  console.log(j); // Outputs 0
+  j++;
+} while (j < 0);
+
+// for...in Loop: Iterates over the enumerable properties of an object.
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+for (let key in person) {
+  console.log(key + ': ' + person[key]); // Outputs name: John, age: 30, city: New York
+}
+
+// for...of Loop: Iterates over the iterable objects (arrays, strings, etc.).
+const fruits = ['apple', 'banana', 'cherry'];
+for (let fruit of fruits) {
+  console.log(fruit); // Outputs apple, banana, cherry
+}
+
+*/
+
+/*
+
+//ARRAY
+
+
+// Array in JavaScript:
+// An array is a special variable that can hold more than one value at a time.
+
+// Creating an Array:
+const fruits = ['apple', 'banana', 'cherry'];
+
+// Accessing Array Elements:
+console.log(fruits[0]); // Output: 'apple'
+console.log(fruits[1]); // Output: 'banana'
+console.log(fruits[2]); // Output: 'cherry'
+
+// Modifying Array Elements:
+fruits[1] = 'orange';
+console.log(fruits); // Output: ['apple', 'orange', 'cherry']
+
+// Array Length:
+console.log(fruits.length); // Output: 3
+
+// Adding Elements to an Array:
+fruits.push('grape'); // Adds 'grape' to the end of the array
+console.log(fruits); // Output: ['apple', 'orange', 'cherry', 'grape']
+
+// Removing Elements from an Array:
+fruits.pop(); // Removes the last element ('grape') from the array
+console.log(fruits); // Output: ['apple', 'orange', 'cherry']
+
+// Iterating Over Arrays:
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// Array Methods:
+// There are many built-in methods for working with arrays in JavaScript, such as push(), pop(), shift(), unshift(), splice(), slice(), etc.
+
+*/
+
+
+/*
+// Adding Elements to an Array:
+const numbers = [1, 2, 3, 4, 5];
+numbers.push(6); // Adds 6 to the end of the array
+console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
+
+numbers.unshift(0); // Adds 0 to the beginning of the array
+console.log(numbers); // Output: [0, 1, 2, 3, 4, 5, 6]
+
+// Intermediate Array Techniques:
+const fruits = ['apple', 'banana', 'cherry', 'date'];
+
+// Spreading Arrays: Combining arrays
+const moreFruits = ['elderberry', 'fig'];
+const allFruits = [...fruits, ...moreFruits];
+console.log(allFruits); // Output: ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig']
+
+// Removing Elements from an Array: Using splice()
+fruits.splice(2, 1); // Removes 'cherry' from the array
+console.log(fruits); // Output: ['apple', 'banana', 'date']
+
+// Slicing an Array: Extracts a section of an array
+const selectedFruits = allFruits.slice(1, 4); // Returns a new array with elements from index 1 to 3 (excluding index 4)
+console.log(selectedFruits); // Output: ['banana', 'cherry', 'date']
+
+// Concatenating Arrays: Joining arrays
+const veggies = ['carrot', 'broccoli'];
+const allFood = fruits.concat(veggies);
+console.log(allFood); // Output: ['apple', 'banana', 'date', 'carrot', 'broccoli']
+
+// Mapping an Array: Creating a new array with modified elements
+const numbersSquared = numbers.map(num => num * num);
+console.log(numbersSquared); // Output: [0, 1, 4, 9, 16, 25, 36]
+
+*/
