@@ -22,9 +22,6 @@ This is a simple web application that allows you to roll a specified number of d
 
 ## Credits
 
-- Created by [Your Name]
-- Dice images from [Your Source]
+- Created by [ABHISHEK KUMAR ]
+- Dice images from [https://game-icons.net/]
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
