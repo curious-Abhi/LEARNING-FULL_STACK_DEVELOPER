@@ -1,0 +1,16 @@
+{
+  "name": "day-25-project-blog-web-application",
+  "version": "1.0.0",
+  "description": "A blog web application project",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  }
+}
