@@ -1,5 +1,14 @@
 /* styles.css */
 
+html, body {
+    height: 100%;
+}
+
+
+main {
+    flex: 1;
+}
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -43,4 +52,15 @@ ul li a {
 
 ul li a:hover {
     color: #666;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom:0;
+    width: 100%;
 }

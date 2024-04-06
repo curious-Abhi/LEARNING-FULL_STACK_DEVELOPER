@@ -1,10 +1,10 @@
 import express from "express";
 const router = express.Router();
 
-// Route to render the form for creating a new article
+
 router.get('/new', (req, res) => {
-  res.render("articles/new.ejs");
-});
+  res.render('articles/new.ejs')
+})
 
 // Temporary storage for articles
 let articles = [];
