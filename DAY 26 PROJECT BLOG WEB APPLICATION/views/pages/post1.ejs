@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <%- include('../partials/header') %>
+    <h1><%= post.title %></h1>
+      
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae, doloremque velit assumenda optio reiciendis illo nam recusandae ea quas error natus debitis aspernatur! Incidunt quidem eos atque. Assumenda, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, atque iure, saepe, voluptate natus expedita dolor molestias esse veritatis possimus ipsam architecto commodi eius corrupti quam libero doloremque eaque?</p>
+   
+  <h2>Add a comment</h2>
+  <form action="/comment/<%=post.id%>" method="post">
+        <input type="text" name="comment" placeholder="Type your comment here">
+        <button type="submit">submit comment</button>
+</form>
+
+<% if(post.comments && post.comments.length>0){ %>
+  <h2>comments:</h2>
+  <ul>
+    <% post.comments.forEach((comment)=>{ %>
+        <li><%=comment%></li>
+    <% }); %>
+  </ul>
+<% } %>
+
+    <!--footer-->
+    <%- include('../partials/footer') %>
+</body>
+</html>

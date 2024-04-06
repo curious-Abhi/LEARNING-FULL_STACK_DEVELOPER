@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Home</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <%- include('../partials/header') %>
+    <h1>Welcome to my blog!</h1>
+
+    <ul>
+        <!-- list of blog posts here -->
+        <% blogPosts.forEach(post => { %>
+             <li><a href="/pages/<%= post.id %>"><%= post.title %></a></li>
+        <% }); %>
+    </ul>
+
+    <!-- FOOTER -->
+    <%- include('../partials/footer') %>
+</body>
+</html>
+

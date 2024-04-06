@@ -1,16 +1,19 @@
 {
-  "name": "day-25-project-blog-web-application",
+  "name": "day-26-project-blog-web-application",
   "version": "1.0.0",
-  "description": "A blog web application project",
-  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Your Name",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "node": "^18.20.1"
   }
 }
