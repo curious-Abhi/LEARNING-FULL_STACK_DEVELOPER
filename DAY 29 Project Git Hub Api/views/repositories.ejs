@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <% if (username === '') { %>
+            <h1>Enter Your GitHub Username</h1>
+            <form action="/repositories" method="GET">
+                <input type="text" name="username" placeholder="Enter your username" required>
+                <button type="submit">Submit</button>
+            </form>
+        <% } else { %>
+            <h1>GitHub Repositories for <%= username %></h1>
+            <ul>
+                <% repositories.forEach(repo => { %>
+                    <li>
+                        <strong><%= repo.name %></strong>: <%= repo.description %> (<a href="<%= repo.url %>">View</a>)
+                    </li>
+                <% }); %>
+            </ul>
+        <% } %>
+    </div>
+</body>
+</html>
