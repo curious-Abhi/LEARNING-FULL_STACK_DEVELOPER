@@ -35,7 +35,7 @@ input[type="text"] {
 button {
     width: 100px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: hsl(120, 100%, 35%);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: hsl(120, 100%, 45%);
 }
 
 ul {
