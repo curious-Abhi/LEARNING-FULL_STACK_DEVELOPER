@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import { log } from "console";
 
 const app = express();
 const port = 3000;
@@ -39,8 +40,29 @@ app.get('/filter',(req,res)=>{
 })
 
 //4. POST a new joke
-
+app.post('/jokes',(req,res)=>{
+ const newjokes={
+    id:jokes.length+1,
+    jokeText:req.body.text,
+    jokeType:req.body.type,
+ };
+ jokes.push(newjokes);
+ console.log(jokes.slice(-1));
+ res.json(newjokes);
+});
 //5. PUT a joke
+
+app.put('/joke/:id',(req,res)=>{
+  const id=parseInt(req.params.id)
+  const replacementJoke={
+    id: id,
+    jokeText:req.body.text,
+    jokeType:req.body.type,
+  };
+  const searchIndex=jokes.findIndex((joke)=>joke.id===id);
+  jokes[searchIndex]=replacementJoke;
+  res.json(replacementJoke);
+});
 
 //6. PATCH a joke
 
