@@ -22,7 +22,9 @@ My primary goal is to master both front-end and back-end web development technol
 
 - Node.js
 - Express.js
+- Ejs
 - MongoDB
+- PostgreSQL
 - RESTful APIs
 
 ### Web Design and Deployment
@@ -39,6 +41,36 @@ My primary goal is to master both front-end and back-end web development technol
 ## Projects and Challenges
 
 Throughout my learning journey, I'll be working on a variety of projects and challenges to apply and reinforce my understanding of the concepts. These projects will range from simple exercises to complex full-stack applications.
+## 💡 Technologies
+### FrontEnd
+  <p align="left">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/html5/html5-original.svg" alt="html5" width="35" height="35"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/css3/css3-original.svg" alt="css3" width="35" height="35"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/bootstrap/bootstrap-plain.svg" alt="bootstrap" width="35" height="35"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/javascript/javascript-original.svg" alt="javascript" width="35" height="35"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/ac557d6ff33ff370a5db99f97aeab35ea5c67fbd/icons/jquery/jquery-original-wordmark.svg" alt="jquery" width="35" height="35"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/react/react-original.svg" alt="react" width="35" height="35"/>
+  </p>
+  
+### BackEnd
+  <p>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="35" height="35">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/express/express-original-wordmark.svg" alt="express" width="35" height="35">
+  </p>
+
+### DataBases
+  <p align="left">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/mongodb/mongodb-original-wordmark.svg" alt="mongo-db" width="35" height="35">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="35" height="35">
+  </p>
+  
+### Tools
+  <p align="left">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/atom/atom-original-wordmark.svg" alt="atom" width="35" height="35">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/bash/bash-original.svg" alt="atom" width="35" height="35">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/git/git-original-wordmark.svg" alt="git" width="35" height="35">
+  </p>
+<hr>
 
 ## How to Use This Repository
 
@@ -62,5 +94,16 @@ Special thanks to all the educators, developers, and creators whose resources, t
 Thank you for joining me on this Full Stack Development Learning Journey! Let's build, learn, and create amazing things together!
 
 Happy coding! 🚀
+## 🤓 Author 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/curious-Abhi"><img src="https://github.com/curious-Abhi/LEARNING-FULL_STACK_DEVELOPER/blob/main/IMG_20240209_063815_660.jpg" width="100px;" alt=""/><br /><sub><b>Abhishek Kumar</b></sub></a><br /><a href= "https://github.com/curious-Abhi" title="Code">💻</a></td>
+  <tr>
+</table>
+
+---
+
+Feel free to star ⭐ this repository if you like what you see 😉.
+
 
 
