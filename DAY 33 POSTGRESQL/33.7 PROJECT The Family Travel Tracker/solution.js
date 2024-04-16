@@ -20,8 +20,8 @@ app.use(express.static("public"));
 let currentUserId = 1;
 
 let users = [
-  { id: 1, name: "Angela", color: "teal" },
-  { id: 2, name: "Jack", color: "powderblue" },
+  { id: 1, name: "Abhishek", color: "teal" },
+  { id: 2, name: "Ankit", color: "powderblue" },
 ];
 
 async function checkVisisted() {
