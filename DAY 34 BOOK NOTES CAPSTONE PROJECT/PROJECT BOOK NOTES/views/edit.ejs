@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        #editForm {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Book</h1>
+    <form id="editForm" action="/edit" method="POST"> 
+        <input type="hidden" name="editItemId" value="<%= book.id %>">
+        
+        <label for="updatedTitle">Updated Title:</label>
+        <input type="text" id="updatedTitle" name="updatedTitle" value="<%= book.title %>" required><br>
+        
+        <label for="updatedDescription">Updated Description:</label>
+        <textarea id="updatedDescription" name="updatedDescription" rows="4" cols="50" required><%= book.description %></textarea><br>
+        
+        <label for="updatedCover">Updated Cover Image URL:</label>
+        <input type="text" id="updatedCover" name="updatedCover" value="<%= book.cover %>" required><br>
+        
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

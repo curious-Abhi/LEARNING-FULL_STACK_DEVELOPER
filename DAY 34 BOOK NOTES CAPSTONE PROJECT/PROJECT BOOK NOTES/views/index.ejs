@@ -1,0 +1,31 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Book Notes</h1>
+    <div class="books-container">
+        <% books.forEach(book => { %>
+            <div class="book">
+                <img src="<%= book.cover %>" alt="<%= book.title %> Cover">
+                <h2><%= book.title %></h2>
+                <p><%= book.description %></p>
+                <form class="edit" action="/edit/<%= book.id %>" method="GET">
+                    <button class="edit-button" type="submit">Edit</button>
+                </form>
+                <form action="/delete" method="POST">
+                    <input type="hidden" name="deleteItemId" value="<%= book.id %>">
+                    <button class="delete-button" type="submit">Delete</button>
+                </form>
+            </div>
+        <% }) %>
+    </div>
+    <a href="/books/add">Add New Book</a>
+</body>
+</html>
