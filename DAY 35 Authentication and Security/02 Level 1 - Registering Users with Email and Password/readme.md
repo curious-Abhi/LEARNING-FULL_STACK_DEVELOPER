@@ -1,6 +1,7 @@
 # Express Authentication System
 
 This is a simple authentication system built with Express.js and PostgreSQL. It allows users to register with an email and password, and then log in to access "secret" content.
+video is attached
 
 ## Features
 
@@ -24,4 +25,7 @@ This is a simple authentication system built with Express.js and PostgreSQL. It 
 
 3. Access secret content:
    - Upon successful login, you will be redirected to the `/secrets` route where you can access secret content.
+
+
+https://github.com/curious-Abhi/LEARNING-FULL_STACK_DEVELOPER/assets/139208472/6630b756-6f4d-4c69-a3b2-6263c46abb55
 
