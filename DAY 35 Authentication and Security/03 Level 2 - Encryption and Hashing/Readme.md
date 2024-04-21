@@ -1,6 +1,5 @@
 # Express Authentication System
 
-![Express Authentication System](screenshot.png)
 
 This is a secure authentication system built with Express.js and PostgreSQL, utilizing bcrypt for password hashing.
 
@@ -42,11 +41,13 @@ To get started with this authentication system, follow these steps:
 3. **Access Secret Content**:
    - Upon successful login, you will be redirected to the `/secrets` route where you can access secret content.
 
-## Screenshots
-
-![Secrets Page](secrets-page.png)
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+
+## working
+https://github.com/curious-Abhi/LEARNING-FULL_STACK_DEVELOPER/assets/139208472/54cda12a-a886-41a3-bc9f-786af2b5add0
+
 
