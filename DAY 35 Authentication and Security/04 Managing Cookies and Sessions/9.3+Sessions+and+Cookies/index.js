@@ -20,6 +20,10 @@ app.use(
     resave: false,
     secret: "TOPSECRETS",
     saveUninitialized: true,
+    cookie: {
+      secure: false, // Set to true if your site is served over HTTPS
+      maxAge: 24 * 60 * 60 * 1000, // Expiry time in milliseconds (1 day)
+    },
   
   })
 );
