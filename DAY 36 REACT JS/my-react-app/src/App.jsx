@@ -253,7 +253,50 @@ function App(){
 
 */
 
-// NOW BY REACT BOOTSTRAP 
+// NOW BY REACT BOOTSTRAP Or TAILWIND CSS
 
+
+
+/*************************************************   EVENT  *************************************** */
+
+/*
+const Button =()=>{
+
+  const clickhandler=(a,b)=>{
+   // alert(" you clicked me ");
+   console.log(a+b);
+  };
+    return <button onClick={()=>clickhandler(2,2)}>Click</button>
+}
+
+
+function App(){
+  return (
+    <Button/>
+  );
+}
+*/
+
+const Copy =()=>{
+
+  const copyHandler=()=>{
+    alert("stop stealing my content")
+    console.log("stop stealing my content")
+};
+ return (
+  <>
+  
+  <p  onCopy={copyHandler}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis at repellendus facilis maxime, cum distinctio tempora, temporibus ratione ipsum sequi ea corporis accusantium ad dicta a esse nesciunt magnam.</p>
+  </>
+ );
+};
+
+function App(){
+  return (
+    <>
+      <Copy/>
+    </>
+  );
+};
 
  export default App;
