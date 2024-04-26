@@ -2,6 +2,8 @@
 // import Add from "./components/Add";
 // import Greetings from "./components/Greetings";
 
+import { useState } from "react";
+
 // function App(){
 //   return (
 //     <Fragment>
@@ -379,6 +381,7 @@ function App() {
 
 /***********************************  ARRAY STATE   *****************************************/
 
+/*
 import { useState } from "react";
 
 function App(){
@@ -389,12 +392,12 @@ function App(){
   }
 
   const removeOne=()=>
-    setFriends()
+    setFriends(friends.filter(f=>(f!=="Ani")))
 
   const updateOne=()=>
-     setFriends([])
+     setFriends(friends.map(f=>(f==="Abhi"? "kumar":f)))
 
-     
+
   return (
    <>
     {friends.map(f=>(
@@ -410,5 +413,84 @@ function App(){
 
   );
 }
+*/
 
+/*
+
+import { useState } from "react";
+
+
+function App(){
+
+  const [movie,setMovie]=useState({
+    title:"Animal",
+    ratings:7
+  });
+
+  const handler=()=>{
+    // const copyMovie={
+    //   ...movie,
+    //   ratings:5
+    // };
+    // setMovie(copyMovie);
+    setMovie({...movie,ratings:5})
+  };
+  return (
+    <>
+    <h1>{movie.title}</h1>
+    <h1>{movie.ratings}</h1>
+    <button onClick={handler}>change ratings</button>
+    
+    </>
+  );
+}
+
+*/
+
+
+/*
+function App() {
+  const [movies, setMovies] = useState([
+    { id: 1, title: "Animal", ratings: 7 },
+    { id: 2, title: "Krrish 3", ratings: 9.2 },
+  ]);
+
+  const handler=()=>{
+    setMovies(movies.map(m=>(m.id===1?{...movies,title:"Joker"}:m)));
+  }
+  return (
+    <>
+      {movies.map((movie) => (
+        <li key={Math.random()}>{movie.title}</li>
+      ))}
+
+      <button onClick={handler}>change name</button>
+    </>
+  );
+}
+
+*/
+
+
+/*********************************************FORMS****************************************/
+
+
+import { useState } from "react";
+function App(){
+  const [username,setUsername]=useState("")
+
+  return (
+
+    <>
+    <form >
+
+      <p>form demo</p>
+      <input type="text" value={username} />
+      <button>submit</button>
+
+    </form>
+   
+    </>
+  );
+}
 export default App;
