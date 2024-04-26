@@ -9,8 +9,7 @@
 //         <Greetings/>
 //   </Fragment>
 //   )
-  
- 
+
 // }
 
 // function App(){
@@ -23,7 +22,6 @@
 // }
 
 //{Expression in JSX}
-
 
 // function App(){
 //   const MyName="Curious Abhi";
@@ -41,7 +39,7 @@
 //   );
 // }
 
-//Lists 
+//Lists
 
 /*
 
@@ -94,7 +92,7 @@ const User=(props)=>{
  </section>
   );
 }*/
-// can also be done by importing 
+// can also be done by importing
 /*
 import User from "./components/user";
  
@@ -117,7 +115,6 @@ return(
 
 */
 
-
 /***********************************************CONDITIONAL RENDERENING **********************************************/
 /*
 const ValidPassword=()=> <h1>Valid Password</h1>
@@ -139,8 +136,7 @@ function App(){
 
 */
 
-
-// one more example 
+// one more example
 
 /*
 const Cart=()=>{
@@ -171,11 +167,7 @@ function App(){
 
 */
 
-
 /******************************************  TERNARY OPERATOR  ***************************************** */
-  
-
-
 
 /*
 const ValidPassword=()=> <h1>Valid Password</h1>
@@ -196,10 +188,8 @@ function App(){
 
 */
 
-
 /***********************************  STYLES       *************************************** */
-//                                All  APPLYING STYLING 
-
+//                                All  APPLYING STYLING
 
 /*
 function App(){
@@ -213,7 +203,6 @@ function App(){
 }
 
 */
-
 
 // ANOTHER WAY OF STYLING
 
@@ -234,7 +223,7 @@ function App(){
 
 */
 
-//   Now by separate css files   
+//   Now by separate css files
 
 // this is done by importing
 
@@ -254,8 +243,6 @@ function App(){
 */
 
 // NOW BY REACT BOOTSTRAP Or TAILWIND CSS
-
-
 
 /*************************************************   EVENT  *************************************** */
 
@@ -277,6 +264,7 @@ function App(){
 }
 */
 
+/*
 const Copy =()=>{
 
   const copyHandler=()=>{
@@ -298,5 +286,129 @@ function App(){
     </>
   );
 };
+*/
 
- export default App;
+/*
+const Move=()=>{
+  const Movehandler=()=>{
+    //console.log("you hovered me")
+    alert("idk")
+  }
+  return (
+   <>
+   <p onMouseMove={Movehandler}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quidem explicabo, earum architecto odio ut quibusdam molestias corporis itaque aspernatur deleniti autem iure officia ipsam inventore ducimus sed corrupti. Id.</p>
+   </>
+
+  );
+}
+function App(){
+  return (
+  <>
+     <Move/>
+  
+  </>
+
+  );
+}
+
+*/
+/****************************    STATE  , HOOKS , USESTATE******************************** */
+
+/*
+
+import { useState } from "react";
+
+
+const Counter=()=>{
+  const [count,setCount]=useState(0);
+
+  const increment=()=>{
+    setCount(count+1);
+  };
+  const decrement=()=>{
+    setCount(count-1);
+  }
+  return(
+    <>
+      <h1>COUNTER PROGRAM</h1>
+     <h1>{count}</h1>
+     <button onClick={increment}>+</button>
+     <button onClick={decrement}>-</button>
+    </>
+  );
+}
+
+function App(){
+
+  return (
+    <>
+  <Counter/>
+
+    </>
+  );
+};
+
+*/
+
+/*
+
+import { useState } from "react";
+
+const Name = () => {
+  const [Username, Setusername] = useState("unknown");
+  const nchange=()=>{
+     Setusername("abhishek");
+  }
+  return (
+    <>
+      <h1>{Username}</h1>
+      <button onClick={nchange}>change name</button>
+    </>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Name />
+    </>
+  );
+}
+
+*/
+
+/***********************************  ARRAY STATE   *****************************************/
+
+import { useState } from "react";
+
+function App(){
+
+  const [friends,setFriends]=useState(["Ani","Abhi"])
+  const addNew=()=>{
+    setFriends([...friends,"Aniket"])
+  }
+
+  const removeOne=()=>
+    setFriends()
+
+  const updateOne=()=>
+     setFriends([])
+
+     
+  return (
+   <>
+    {friends.map(f=>(
+      <li key={Math.random()}>{f}</li>
+    ))} 
+
+
+     <button onClick={addNew}>Add one</button>
+     <button onClick={removeOne}>Remove one </button>
+     <button onClick={updateOne}>Update one</button>
+     
+   </>
+
+  );
+}
+
+export default App;
