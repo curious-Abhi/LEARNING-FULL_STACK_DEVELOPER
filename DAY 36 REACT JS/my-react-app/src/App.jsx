@@ -2,7 +2,7 @@
 // import Add from "./components/Add";
 // import Greetings from "./components/Greetings";
 
-import { useState } from "react";
+//import { useState } from "react";
 
 // function App(){
 //   return (
@@ -447,7 +447,6 @@ function App(){
 
 */
 
-
 /*
 function App() {
   const [movies, setMovies] = useState([
@@ -471,25 +470,51 @@ function App() {
 
 */
 
-
 /*********************************************FORMS****************************************/
 
-
+/*
 import { useState } from "react";
-function App(){
-  const [username,setUsername]=useState("")
+function App() {
+  const [username, setUsername] = useState("");
+   const handleChange=(event)=>{
+    setUsername(event.target.value)
+   }
+    const handleSubmit=(event)=>{
+      event.preventDefault()
+      alert(`you typed :${username}`)
+      setUsername("");
+    }
+  return (
+    <>
+      <form onSubmit={handleSubmit}>
+        <p>form demo</p>
+        <input type="text" value={username} onChange={handleChange} />
+        <button>submit</button>
+      </form>
+    </>
+  );
+}
+
+*/
+
+/***************************************USE EFFECT() *************************************/
+
+import { useEffect, useState } from "react";
+
+function App() {
+  const [value, setValue] = useState(0);
+
+  //1.render for the {first time}
+
+  useEffect(() => {
+    console.log("Hello World");
+    document.title=`increment(${value})`
+  });
 
   return (
-
     <>
-    <form >
-
-      <p>form demo</p>
-      <input type="text" value={username} />
-      <button>submit</button>
-
-    </form>
-   
+      <h1 key={value}>{value}</h1>
+      <button onClick={() => setValue(value + 1)}>click me</button>
     </>
   );
 }
