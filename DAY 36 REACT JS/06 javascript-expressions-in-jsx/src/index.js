@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 
 const fname = "Abhishek ";
 const lname = "Kumar";
-const fnum = 7;
+//const fnum = 7;
 
 ReactDOM.render(
   <div>
