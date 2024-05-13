@@ -37,7 +37,7 @@ const db = new pg.Client({
 db.connect();
 
 app.get("/", (req, res) => {
-  res.render("home.ejs",);
+  res.render("home.ejs");
 });
 
 app.get("/login", (req, res) => {
