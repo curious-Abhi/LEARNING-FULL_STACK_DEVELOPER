@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.session();
 
 const db = new pg.Client({
   user: process.env.PG_USER,
