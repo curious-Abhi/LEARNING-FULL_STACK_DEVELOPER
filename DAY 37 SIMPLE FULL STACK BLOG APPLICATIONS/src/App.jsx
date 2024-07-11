@@ -4,12 +4,13 @@ import Homepage from "./pages/Homepage";
 import Aboutpage from "./pages/Aboutpage";
 import ArticlesList from "./pages/ArticlesList";
 import ArticlePage from "./pages/ArticlePage";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="app">
-        <h1>My Awesome Blog</h1>
+        <Navbar/>
         <div id="page-body">
           <Routes>
             <Route path="/" element={<Homepage />} />
