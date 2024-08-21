@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <%- include('../partials/header') %>
-    <h1>Welcome to my blog!</h1>
+    <!-- WRAPPER DIV TO CONTAIN CONTENT AND FOOTER -->
+    <div class="wrapper">
+        <!-- NAVBAR -->
+        <%- include('../partials/header') %>
 
-    <ul>
-        <!-- list of blog posts here -->
-        <% blogPosts.forEach(post => { %>
-             <li><a href="/pages/<%= post.id %>"><%= post.title %></a></li>
-        <% }); %>
-    </ul>
+        <h1>Welcome to my blog!</h1>
 
+        <ul>
+            <!-- list of blog posts here -->
+            <% blogPosts.forEach(post => { %>
+                 <li><a href="/pages/<%= post.id %>"><%= post.title %></a></li>
+            <% }); %>
+        </ul>
+    </div>
     <!-- FOOTER -->
     <%- include('../partials/footer') %>
 </body>
 </html>
-
