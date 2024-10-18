@@ -1,1 +1,47 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background: linear-gradient(#090979, #00d4ff);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  max-width: 290px;
+  line-height: 24px;
+  margin: 4rem;
+  padding: 20px;
+  position: relative;
+  background: #7372dd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  right: -30px;
+  bottom: 170px;
+}
+
+.img-one {
+  background: url("./one.jpeg") no-repeat center/cover;
+}
+
+.img-two {
+  background: url("./one.jpeg") no-repeat center/cover;
+}
+
+.img-three {
+  background: url("./one.jpeg") no-repeat center/cover;
+}
+
+.img-four {
+  background: url("./one.jpeg") no-repeat center/cover;
+}/*# sourceMappingURL=index.css.map */
