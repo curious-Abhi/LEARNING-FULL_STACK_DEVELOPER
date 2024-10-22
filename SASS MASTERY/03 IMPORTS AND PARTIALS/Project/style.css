@@ -28,4 +28,64 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+main {
+  background: url("https://img.freepik.com/free-photo/forest-mountanis_1204-496.jpg?ga=GA1.1.1645390701.1719544003&semt=ais_hybrid");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+main p {
+  max-width: 600px;
+  margin: 10px;
+}
+main button {
+  background: transparent;
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-content {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  margin: 0 6rem;
+  font-family: sans-serif;
+}
+.card .card-content h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+.card .card-content p {
+  margin: 20px 0;
+  margin-bottom: 40px;
+  line-height: 1.5rem;
+}
+.card .card-content a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+}
+.card .card-img {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
