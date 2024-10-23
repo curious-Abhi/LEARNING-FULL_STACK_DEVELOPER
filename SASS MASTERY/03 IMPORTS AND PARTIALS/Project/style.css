@@ -88,4 +88,56 @@ main button {
 }
 .card .card-img {
   width: 400px;
+}
+
+.gallery {
+  margin-top: 6rem;
+}
+.gallery h1 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery .gallery-img {
+  width: 400px;
+  margin: 20px;
+}
+
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer form input, footer form textarea {
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: 400px;
+  box-sizing: border-box;
+}
+footer form textarea {
+  height: 200px;
+  resize: vertical;
+}
+footer form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+footer form button:hover {
+  background-color: #000000;
 }/*# sourceMappingURL=style.css.map */
